@@ -1,6 +1,7 @@
 package org.zx.utils;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -31,5 +32,15 @@ public class ListUtils {
 
     public static Boolean isSizeOne(Collection c){
         return EmptyJudgeUtils.isNotEmpty(c) && c.size() == 1;
+    }
+
+    /**
+     * 取出除了第一个之外的剩余的
+     * @param c
+     * @param <T>
+     * @return
+     */
+    public static <T> List<T> findWithoutFirst(List<T> c){
+        return EmptyJudgeUtils.isNotEmpty(c) && c.size() > 1 ?  c.subList(1, c.size()) : Collections.EMPTY_LIST;
     }
 }
