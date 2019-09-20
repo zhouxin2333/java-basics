@@ -54,7 +54,7 @@ public class ZXFailedLogEntity<T, R extends ZXAsyncTaskCoreBusiness<T>> extends 
      * 重试成功后的关键id
      */
     @Column(name = "retry_success_key_id")
-    private Long retrySuccessKeyId;
+    private String retrySuccessKeyId;
 
     /**
      * 参数context的class类

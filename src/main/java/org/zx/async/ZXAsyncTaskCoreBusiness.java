@@ -6,7 +6,7 @@ package org.zx.async;
  */
 public interface ZXAsyncTaskCoreBusiness<T> {
 
-    void doCore(T context);
+    String doCore(T context);
 
     /**
      * 重试的合法性校验

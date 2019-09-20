@@ -8,7 +8,7 @@ create table public.failed_log(
   valid_status VARCHAR(50),
   retry_times int,
   error_stack text,
-  retry_success_key_id bigint,
+  retry_success_key_id VARCHAR(500),
   context_class VARCHAR(300),
   context_value text,
   core_business_class VARCHAR(300)
