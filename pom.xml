@@ -17,7 +17,7 @@
         <lombok.version>1.18.8</lombok.version>
         <jackson.annotations.version>2.9.0</jackson.annotations.version>
         <jackson.core.version>2.9.8</jackson.core.version>
-        <jackson.databind.version>2.9.8</jackson.databind.version>
+        <jackson.databind.version>2.12.1</jackson.databind.version>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
         <fastjson.version>1.2.58</fastjson.version>
     </properties>
